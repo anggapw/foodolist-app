@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Component from './components/HistoryCard';
+import HistoryCard from './components/HistoryCard';
 
 function App() {
 
-  let komponen = [
+  let data = [
   {
     image: 'https://www.resepkuerenyah.com/wp-content/uploads/2020/05/Resep-Ketoprak.jpg',
     restaurantName: 'Ketoprak Pak Muktar',
@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <h1 className ="Title">Makanan Kamu Lagi Dimana Ya?</h1>
-      <Component card={komponen}/>
+      <HistoryCard komponen={data}/>
       <div />
     </div>
   );
